@@ -1,0 +1,20 @@
+<div class="container">
+<h1>Lista de Matriculas</h1>
+<button class="btn btn-info" type="button">Nueva Matrícula</button>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID MATRICULA</th>
+      <th scope="col">ID CLASE</th>
+      <th scope="col">ID ESTUDIANTE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let matricula of matriculas">
+      <th scope="row"> {{matricula.aIdMatricula}} </th>
+      <td>{{ matricula.aIdClase}}</td>
+      <td>{{ matricula.aIdEstudiante}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

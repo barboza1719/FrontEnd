@@ -1,0 +1,21 @@
+<div class="container">
+<h1>Lista de Estudiantes</h1>
+<button class="btn btn-info" type="button">Nuevo Estudiante</button>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID ESTUDIANTES</th>
+      <th scope="col">NOMBRES</th>
+      <th scope="col">APELLIDOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let estudiante of estudiantes">
+      <th scope="row"> {{estudiante.aIdEstudiante}} </th>
+      <td>{{ estudiante.aEstudiante}}</td>
+      <td>{{ estudiante.aApellidos}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
